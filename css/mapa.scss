@@ -1,0 +1,221 @@
+@use "sass:color";
+
+$color-header: rgb(255, 236, 201);
+$color-texto: black;
+$color-hover: #f28c28;
+$padding-header: 10px;
+$color-nav: rgb(42, 26, 13);
+$color-primario: #c85a17;
+$color-secundario: #1e3a5f;
+$color-fondo-panel: #ffffff;
+$color-fondo-input: #fdf6f0;
+$color-texto-dark: #2c2520;
+$color-texto-muted: #718096;
+$color-borde: #e2e8f0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background: $color-header;
+    padding: 14px 0;
+
+
+
+    .header-contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 34px;
+            height: 34px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 20px;
+            color: #8a2d12;
+        }
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+        margin: 5px;
+
+        a {
+            color: $color-nav;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            &:hover {
+                color: $color-hover;
+            }
+        }
+    }
+
+}
+.modulo-mapa-integrado {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 70px);
+  overflow: hidden;
+
+  .panel-lateral {
+    width: 28%;         
+    height: 100%;
+    padding: 25px;
+    background-color: $color-fondo-panel;
+    border-right: 1px solid $color-borde;
+    overflow-y: auto;
+    box-sizing: border-box;
+
+    .panel-header {
+      margin-bottom: 25px;
+
+      h2 {
+        font-size: 1.6rem;
+        color: $color-secundario;
+        margin: 0 0 8px 0;
+        font-weight: 700;
+      }
+      p {
+        font-size: 0.95rem;
+        color: $color-texto-muted;
+        margin: 0;
+      }
+    }
+  }
+
+  .visor-mapa {
+    width: 72%;       
+    height: 100%;
+    background-color: #edf2f7;
+    position: relative;
+
+    #mapa-interactivo-ia {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.filtros-contenedor {
+  margin-bottom: 0; 
+
+  .campo-grupo {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $color-texto-dark;
+      margin-bottom: 8px;
+
+      span {
+        color: $color-primario;
+      }
+    }
+
+    .input-readonly {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #f3d9c4;
+      background-color: $color-fondo-input;
+      color: $color-primario;
+      font-weight: bold;
+      border-radius: 6px;
+      outline: none;
+      font-size: 0.95rem;
+      box-sizing: border-box;
+    }
+
+    .slider-filtro {
+      width: 100%;
+      accent-color: $color-primario;
+      cursor: pointer;
+    }
+
+    .opciones-botones {
+      display: block;
+      margin-top: 5px;
+
+      .btn-opcion {
+        padding: 8px 14px;
+        background-color: #f7fafc;
+        border: 1px solid $color-borde;
+        color: $color-texto-dark;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        cursor: pointer;
+        margin-right: 6px;
+        margin-bottom: 8px;
+        transition: all 0.2s ease;
+
+        &:hover {
+          border-color: $color-primario;
+          color: $color-primario;
+        }
+
+        &.activo {
+          background-color: $color-primario;
+          border-color: $color-primario;
+          color: #ffffff;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .btn-principal {
+    width: 100%;
+    padding: 14px;
+    background-color: $color-primario;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: color.adjust($color-primario, $lightness: -8%);
+    }
+
+    .icono-chispa {
+      margin-right: 5px;
+    }
+  }
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: 280px !important;
+}
+

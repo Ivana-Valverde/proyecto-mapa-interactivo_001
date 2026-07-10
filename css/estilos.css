@@ -1,0 +1,229 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background:  rgb(249, 192, 86);
+  padding: 14px 0;
+}
+header .header-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .logo img {
+  width: 34px;
+  height: 34px;
+}
+header .logo h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #8a2d12;
+}
+header nav {
+  display: flex;
+  gap: 20px;
+  margin: 5px;
+}
+header nav a {
+  color: #3d1f14;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header nav a:hover {
+  color: #f28c28;
+}
+
+.modulo-mapa-integrado {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  background: #f5f1e8;
+}
+
+.region {
+  display: flex;
+  justify-content: left;
+  width: 48%;
+}
+.region .tarjeta-region {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.mapa {
+  display: flex;
+  justify-content: right;
+  width: 60%;
+}
+.mapa .container {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.mapa .container svg {
+  display: block;
+  background: #f5f1e8;
+}
+.mapa .container .zona {
+  fill: rgb(37, 95, 37);
+  stroke: rgb(28, 37, 31);
+}
+.mapa .container .zona:hover {
+  fill: rgb(225, 185, 50);
+}
+.mapa .container .zona.activo {
+  fill: rgb(225, 185, 50);
+}
+
+footer {
+  background: rgb(255, 236, 201);
+  padding: 20px 0 25px 0;
+}
+footer .footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+footer .footer-contenido article {
+  width: 30%;
+}
+footer .footer-contenido article h3 {
+  margin-top: 0;
+  color: black;
+  font-size: 22px;
+}
+footer .footer-contenido article p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+footer .footer-contenido article a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+footer .footer-contenido article a:hover {
+  color: #f28c28;
+}
+
+.tarjeta-region {
+  width: 95%;
+  margin: 15px auto;
+  padding: 18px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGEN */
+#imgPrincipal {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 4px solid white;
+}
+
+/* TEXTO */
+.texto-region {
+  text-align: center;
+}
+
+.texto-region h2 {
+  font-family: Candara, "Trebuchet MS", sans-serif;
+  font-size: 42px;
+  color: #1f6a45;
+  margin-bottom: 3px;
+}
+
+.texto-region h3 {
+  font-family: Candara, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: #b57b00;
+  margin-bottom: 12px;
+  font-weight: normal;
+  margin-top: -5px;
+}
+
+.texto-region p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #444;
+  text-align: center;
+}
+
+.datos-rapidos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 12px 0 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f6a45;
+}
+
+.datos-rapidos span {
+  background: #eef6ef;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+/* LÍNEA */
+#lugaresTuristicos {
+  margin-top: 18px;
+}
+
+/* DOS CAJAS */
+.info-final {
+  display: flex;
+  gap: 18px;
+}
+
+.bloque {
+  flex: 1;
+  padding: 16px;
+  background: #edf7ef;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.bloque h3 {
+  background: #1f6a45;
+  color: white;
+  padding: 12px;
+  margin: -16px -16px 18px -16px;
+}
+
+.bloque:last-child h3 {
+  background: #c88700;
+}
+
+.bloque p {
+  font-size: 14px;
+  margin: 8px 0;
+}/*# sourceMappingURL=estilos.css.map */

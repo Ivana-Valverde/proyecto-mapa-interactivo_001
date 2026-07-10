@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perú 3D - Experiencias IA</title>
+    
+    <link rel="stylesheet" href="css/mapa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+</head>
+<body>
+    <header>
+        <div class="contenedor header-contenido">
+
+    <div class="logo">
+      <img src="../img/chulloorig.png" alt="">
+      <h1>Perú 3D</h1>
+    </div>
+
+    <nav>
+      <a href="html/inicio.html">Inicio</a>
+      <a href="html/mapaI.html">Mapa interactivo</a>
+      <a href="html/gastronomia.html">Gastronomía</a>
+      <a href="mapa.html">Experiencias IA</a>
+      <a href="html/contacto.html">Sobre Nosotros</a>
+    </nav>
+
+  </div>
+    </header>
+
+    <main class="modulo-mapa-integrado">
+        <section class="panel-lateral">
+            <div class="panel-header">
+                <h2>Experiencias IA</h2>
+                <p>Selecciona una región en el mapa y personaliza tu ruta gastronómica.</p>
+            </div>
+
+            <form id="form-filtros-ia" class="filtros-contenedor">
+                <div class="campo-grupo">
+                    <label for="region-seleccionada">Región Seleccionada</label>
+                    <input type="text" id="region-seleccionada" value="Ninguna (Haz clic en el mapa)" readonly class="input-readonly">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="duracion-viaje">Duración: <span id="txt-duracion">4 días</span></label>
+                    <input type="range" id="duracion-viaje" min="1" max="7" value="4" class="slider-filtro">
+                </div>
+
+                <div class="campo-grupo">
+                    <label>¿Con quién viajas?</label>
+                    <div class="opciones-botones">
+                        <button type="button" class="btn-opcion">Solo</button>
+                        <button type="button" class="btn-opcion activo">Pareja</button>
+                        <button type="button" class="btn-opcion">Familia</button>
+                        <button type="button" class="btn-opcion">Amigos</button>
+                    </div>
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Presupuesto</label>
+                    <div class="opciones-botones">
+                        <button type="button" class="btn-opcion">Mochilero</button>
+                        <button type="button" class="btn-opcion activo">Medio</button>
+                        <button type="button" class="btn-opcion">Premium</button>
+                    </div>
+                </div>
+
+                <button id="btn-generar-experiencia" class="btn-principal" type="submit">
+                    <span class="icono-chispa">✨</span> Generar experiencia
+                </button>
+            </form>
+
+            <div id="resultado-itinerario" class="resultado-itinerario-contenedor" style="display:none;"></div>
+        </section>
+
+        <section class="visor-mapa">
+            <div id="mapa-interactivo-ia"></div>
+        </section>
+    </main>
+     <footer>
+    <div class="contenedor">
+      <section class="footer-contenido">
+        <article>
+          <h3>Perú 3D</h3>
+          <p>
+            Plataforma informativa para descubrir las regiones del Perú a través de
+            su gastronomía y experiencias diseñadas con IA.
+          </p>
+        </article>
+
+        <article>
+          <h3>Explora</h3>
+          <a href="../html/mapaI.html">Mapa interactivo</a>
+          <a href="../html/gastronomia.html">Platos típicos</a>
+          <a href="../mapa.html">Generador IA</a>
+        </article>
+
+        <article>
+          <h3>Datos</h3>
+          <p>24 regiones - 500+ platos típicos - 1000+ destinos</p>
+        </article>
+      </section>
+
+      <p class="copy">© 2026 Perú 3D - Hecho con cariño desde los Andes.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="JS/mapa.js"></script>
+
+</body>
+</html>

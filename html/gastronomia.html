@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../SCSS/gastronomia.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor header-contenido">
+
+            <div class="logo">
+                <img src="../img/chulloorig.png" alt="Logo Perú 3D">
+                <h1>Perú 3D</h1>
+            </div>
+
+            <nav>
+                <a href="../html/inicio.html">Inicio</a>
+                <a href="../html/mapaI.html">Mapa interactivo</a>
+                <a href="../html/gastronomia.html">Gastronomía</a>
+                <a href="../mapa.html">Experiencia IA</a>
+                 <a href="../html/contacto.html">Sobre Nosotros</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="gastronomia">
+
+            <div class="contenedor">
+
+                <!-- TÍTULO DE LA SECCIÓN -->
+                <div class="titulo-gastronomia">
+                    <p>GASTRONOMÍA</p>
+                    <h2>
+                        Sabores que cuentan al perú
+                    </h2>
+
+                    <span>
+                        Descubre los platos tradicionales de cada región,
+                        su historia y el valor cultural que representan.
+                    </span>
+                </div>
+
+                <!-- FILTROS -->
+                <div class="filtros">
+
+                    <div class="botones-region">
+
+                        <button class="filtro activo" data-region="todos">
+                            Todos
+                        </button>
+
+                        <button class="filtro" data-region="costa">
+                            Costa
+                        </button>
+
+                        <button class="filtro" data-region="sierra">
+                            Sierra
+                        </button>
+
+                        <button class="filtro" data-region="selva">
+                            Selva
+                        </button>
+
+                    </div>
+
+                    <input class="buscador" type="text" placeholder="Buscar plato o región ........">
+
+                </div>
+
+                <!-- AQUÍ VAN LAS TARJETAS -->
+
+                <section class="contenedor-platos">
+
+                    <article class="tarjeta-plato costa">
+
+                        <img src="../img/cevichepiurano.PNG" alt="Ceviche">
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Piura
+                            </p>
+
+                            <h3>
+                                Ceviche Piurano
+                            </h3>
+
+                            <p>
+                                Pescado fresco marinado en limón con cebolla roja
+                                y ají limo, representando los sabores intensos del
+                                norte peruano.
+                            </p>
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+                                <p>
+                                    Su origen se relaciona con la tradición
+                                    andina de la papa y evolucionó en Lima
+                                    hasta convertirse en uno de los platos
+                                    más reconocidos.
+                                </p>
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Chicha de jora
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="tarjeta-plato costa">
+
+                        <img src="../img/lomosaltado.jpg" alt="Lomo Saltado">
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Lima
+                            </p>
+
+                            <h3>
+                                Lomo Saltado
+                            </h3>
+
+                            <p>
+                                Plato fusión preparado con carne salteada, cebolla,
+                                tomate y papas fritas con influencia de la cocina china.
+                            </p>
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+                                <p>
+                                    El lomo saltado nació de la mezcla entre la cocina peruana
+                                    y la inmigración china. Sus técnicas de salteado y sus
+                                    ingredientes nacionales dieron origen a uno de los platos
+                                    más populares del Perú.
+                                </p>
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Inca Kola
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="tarjeta-plato costa">
+
+                        <img src="../img/causalimeña.jpg" alt=" Causa Limeña">
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Lima
+                            </p>
+
+                            <h3>
+                                Causa Limeña
+                            </h3>
+
+                            <p>
+                                Preparación hecha con papa amarilla,
+                                ají amarillo y limón, acompañada de
+                                rellenos tradicionales.
+                            </p>
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+                                <p>
+                                    La causa representa la importancia de la papa en
+                                    la gastronomía peruana. Con el paso del tiempo se
+                                    convirtió en un plato clásico de Lima por su sabor
+                                    y presentación colorida.
+                                </p>
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Chicha Morada
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="tarjeta-plato costa">
+
+                        <img src="../img/arrozconpato.PNG" alt="Arroz con Pato">
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Lambayeque
+                            </p>
+
+                            <h3>
+                                Arroz con Pato
+                            </h3>
+
+                            <p>
+                                Arroz verde preparado con pato, culantro y
+                                especias tradicionales del norte peruano.
+                            </p>
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+                                <p>
+                                    Este plato es una muestra de la riqueza gastronómica
+                                    de Lambayeque. Su preparación combina ingredientes
+                                    regionales y técnicas heredadas de generaciones anteriores.
+                                </p>
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Cerveza Peruana
+
+                            </div>
+
+                        </div>
+
+
+                    </article>
+
+                    <article class="tarjeta-plato sierra">
+
+
+                        <img src="../img/pachamanca.jpg" alt="Pachamanca">
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Cusco
+                            </p>
+
+                            <h3>
+                                Pachamanca
+                            </h3>
+
+                            <p>
+                                Carnes, papas y otros productos andinos
+                                cocidos bajo tierra con piedras calientes.
+                            </p>
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+                                <p>
+                                    La pachamanca es una tradición ancestral de los Andes
+                                    cuyo nombre significa "olla de tierra". Representa la
+                                    conexión entre la comunidad, la tierra y los productos
+                                    agrícolas.
+                                </p>
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Chicha de jora
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="tarjeta-plato sierra">
+
+
+                        <img src="../img/cuychactado.PNG" alt="Cuy Chactado">
+
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Cusco
+                            </p>
+
+                            <h3>
+                                Cuy Chactado
+                            </h3>
+
+                            <p>
+                                Cuy preparado de manera tradicional
+                                acompañado de papas y productos
+                                propios de los Andes.
+                            </p>
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+                                <p>
+                                    El cuy chactado es un plato con raíces prehispánicas
+                                    muy valorado en la gastronomía andina. Su preparación
+                                    mantiene técnicas tradicionales transmitidas por generaciones.
+                                </p>
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Chicha de jora
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta-plato sierra">
+
+                        <img src="../img/trucha.PNG" alt="Trucha Frita">
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Puno
+                            </p>
+
+                            <h3>
+                                Trucha Frita
+                            </h3>
+
+                            <p>
+                                Trucha fresca de lagos andinos
+                                acompañada de papas y ensalada tradicional.
+                            </p>
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+                                <p>
+                                    La trucha se adaptó a la gastronomía peruana de altura
+                                    convirtiéndose en un plato representativo de Puno.
+                                    Destaca por su sabor fresco y preparación sencilla.
+                                </p>
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Mate de muña
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="tarjeta-plato sierra">
+
+
+                        <img src="../img/churiuchu.PNG" alt="Chiri Uchu">
+
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Cusco
+                            </p>
+
+
+                            <h3>
+                                Chiri Uchu
+                            </h3>
+
+                            <p>
+                                Plato tradicional con pollo,
+                                cuy, queso, maíz y productos
+                                típicos de la región andina.
+                            </p>
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+                                <p>
+                                    El Chiri Uchu es considerado uno de los platos
+                                    más importantes de Cusco. Se prepara especialmente
+                                    durante festividades y reúne diversos sabores de la cultura andina.
+                                </p>
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Chicha de jora
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="tarjeta-plato sierra">
+
+
+                        <img src="../img/rocotorelleno.jpg" alt="Rocoto Relleno">
+
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Arequipa
+                            </p>
+
+
+                            <h3>
+                                Rocoto Relleno
+                            </h3>
+
+                            <p>
+                                Rocoto picante relleno de carne,
+                                pasas y queso gratinado.
+                            </p>
+
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+
+                                <p>
+                                    El rocoto arequipeño combina picor intenso con dulzura
+                                    de pasas y cremosidad de queso fundido. Se sirve con
+                                    pastel de papa y es la prueba de fuego de cualquier
+                                    picantería. Plato bandera del sur.
+                                </p>
+
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Chicha de guiñapo morada arequipeña.
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="tarjeta-plato selva">
+
+                        <img src="../img/juane.jpg" alt="Juane">
+
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Loreto
+                            </p>
+
+
+                            <h3>
+                                Juane
+                            </h3>
+
+
+                            <p>
+                                Arroz amarillo con gallina y
+                                huevo envuelto en hoja de bijao.
+                            </p>
+
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+
+                                <p>
+                                    El juane es uno de los platos más representativos de
+                                    la Amazonía peruana. Su preparación está relacionada
+                                    con celebraciones tradicionales y el uso de
+                                    ingredientes locales.
+                                </p>
+
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Refresco de camu camu
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="tarjeta-plato selva">
+
+
+                        <img src="../img/tacacho.PNG" alt="Tacacho con Cecina">
+
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                San Martin
+                            </p>
+
+
+                            <h3>
+                                Tacacho con Cecina
+                            </h3>
+
+                            <p>
+                                Plátano verde majado con
+                                chicharrón y cecina ahumada.
+                            </p>
+
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+                                <p>
+                                    Desayuno y plato fuerte amazónico. El plátano bellaco se asa,
+                                    se maja con manteca y se acompaña de cecina y chorizo regional
+                                    ahumados con maderas nobles. Sabor profundo, reconfortante y
+                                    selvático.
+                                </p>
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Jugo de camu camu o masato fermentado.
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta-plato costa">
+
+
+                        <img src="../img/carapulcra.jpg" alt="Carapulcra">
+
+
+                        <div class="contenido-plato">
+
+                            <p class="region">
+                                Ica
+                            </p>
+
+
+                            <h3>
+                                Carapulcra
+                            </h3>
+
+
+                            <p>
+                                Guiso tradicional preparado con papa seca,
+                                carne de cerdo o gallina, ajíes y especias
+                                propias de la cocina peruana.
+                            </p>
+
+
+                            <a href="#" class="leer">
+                                Leer reseña
+                            </a>
+
+                            <div class="detalle">
+
+
+                                <p>
+                                    La carapulcra es uno de los platos más antiguos del Perú y
+                                    refleja la mezcla de culturas andinas y afroperuanas.
+                                    Su preparación con papa seca conserva técnicas tradicionales
+                                    transmitidas durante generaciones.
+                                </p>
+
+
+                                <strong>
+                                    Maridaje:
+                                </strong>
+
+                                Vino tinto de Ica
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <section class="footer-contenido">
+                <article>
+                    <h3>Perú 3D</h3>
+                    <p>
+                        Plataforma informativa para descubrir las regiones del Perú a través de
+                        su gastronomía y experiencias diseñadas con IA.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Explora</h3>
+                    <a href="../html/mapaI.html">Mapa interactivo</a>
+                    <a href="../html/gastronomia.html">Platos típicos</a>
+                    <a href="../mapa.html">Generador IA</a>
+                </article>
+
+                <article>
+                    <h3>Datos</h3>
+                    <p>24 regiones - 500+ platos típicos - 1000+ destinos</p>
+                </article>
+            </section>
+
+            <p class="copy">© 2026 Perú 3D - Hecho con cariño desde los Andes.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/gastronomia.js"></script>
+
+</body>
+
+</html>

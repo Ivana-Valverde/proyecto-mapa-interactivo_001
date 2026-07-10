@@ -1,0 +1,388 @@
+@use 'primero' as *;
+
+@mixin boton($fondo, $color) {
+    background: $fondo;
+    color: $color;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+@mixin card-style {
+    background: $color-blanco;
+    padding: $espaciado-base;
+    border-radius: $radio;
+    box-shadow: 0 4px 12px $color-sombra;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $fuente-principal;
+    background: $color-fondo;
+    color: $color-texto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: $color-claro;
+    padding: 14px 0;
+
+    .header-contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 34px;
+            height: 34px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 20px;
+            color: $color-principal;
+        }
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: $color-texto;
+            text-decoration: none;
+            font-size: 14px;
+
+            &:hover {
+                color: $color-secundario;
+            }
+        }
+    }
+}
+
+footer {
+    background: $color-claro;
+    padding: 45px 0 25px 0;
+
+    .footer-contenido {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        article {
+            width: 30%;
+
+            h3 {
+                margin-top: 0;
+                color: $color-principal;
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: $color-texto;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+
+    .copy {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 13px;
+    }
+}
+
+.banner-interno {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    background-image: 
+        linear-gradient(rgba(110, 35, 10, 0.55), rgba(110, 35, 10, 0.55)),
+        url("../img/lima2.jpg"); 
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: $color-blanco;
+    text-align: center;
+
+    .banner-interno-contenido {
+        width: 100%;
+        
+        h2 {
+            font-size: 42px;
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0;
+            opacity: 0.9;
+            font-style: italic;
+        }
+    }
+}
+
+.quienes-somos {
+    padding: 70px 0;
+
+    .contenido-nosotros {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .texto-nosotros {
+        width: 50%;
+
+        .subtitulo {
+            margin: 0 0 8px 0;
+            color: $color-secundario;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        h3 {
+            margin: 0 0 20px 0;
+            color: $color-principal;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 16px;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .imagen-nosotros {
+    width: 50%;
+    overflow: hidden; 
+    border-radius: $radio;
+    box-shadow: 0 6px 18px $color-sombra;
+
+    img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s ease;
+        filter: brightness(1);
+
+        &:hover {
+            transform: scale(1.15);
+            filter: brightness(1.15); 
+        }
+    }
+}
+}
+
+.valores {
+    background: linear-gradient(to bottom, #f5f1e8, #ede7da);
+    padding: 60px 0 80px 0;
+
+    .titulo-valores {
+        text-align: center;
+        margin-bottom: 40px;
+
+        h2 {
+            margin: 0;
+            color: $color-principal;
+            font-size: 36px;
+        }
+    }
+
+    .contenedor-valores {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+
+        .tarjeta-valor {
+            @include card-style; 
+            flex: 1;
+            text-align: center;
+            border-top: 4px solid $color-secundario; 
+            padding: 0; 
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+
+            .imagen-tarjeta {
+                width: 100%;
+                height: 180px; 
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; 
+                    transition: transform 0.4s ease; 
+                }
+            }
+
+            .contenido-tarjeta {
+                padding: $espaciado-base; 
+                
+                h3 {
+                    margin-top: 0;
+                    color: $color-principal;
+                    font-size: 22px;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    color: $color-texto;
+                }
+            }
+            &:hover {
+                .imagen-tarjeta img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+strong {
+    color: $color-principal; 
+    font-weight: 700;       
+    letter-spacing: 0.2px;   
+}
+
+.testimonios {
+    padding: 110px 0 50px 0;
+    background-color: transparent; 
+
+    .titulo-testimonios {
+        text-align: center;
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 36px;
+            color: $color-principal;
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            font-size: 15px;
+            color: $color-texto;
+            margin: 0;
+            opacity: 0.8;
+        }
+    }
+
+    .grid-testimonios {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta-testimonio {
+        background: $color-blanco;
+        padding: 35px 30px;
+        border-radius: 18px;
+        box-shadow: 0 4px 12px $color-sombra;
+        width: calc(50% - 12px);
+        min-width: 280px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px $color-sombra;
+        }
+
+        .comentario {
+            font-size: 14.5px;
+            line-height: 1.6;
+            color: $color-texto;
+            font-style: italic;
+            margin: 0 0 25px 0;
+        }
+
+        .usuario {
+            border-top: 1px solid rgba($color-texto, 0.1);
+            padding-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            .avatar-usuario {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 2px solid $color-secundario; 
+                background-color: #eee;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .datos-usuario {
+                strong {
+                    display: block;
+                    font-size: 15px;
+                    color: $color-principal;
+                }
+
+                span {
+                    display: block;
+                    font-size: 12.5px;
+                    color: $color-texto;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
